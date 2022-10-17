@@ -132,7 +132,7 @@ h6 {
 
 #header .profile h3 a,
 #header .profile h3 a:hover {
-  color: rgba(255, 255, 255, 0.527);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -244,7 +244,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/bogboghero.jpg") top center;
   background-size: cover;
 }
 
@@ -1117,4 +1117,8 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+.disable-Image{
+  display: none;
 }
