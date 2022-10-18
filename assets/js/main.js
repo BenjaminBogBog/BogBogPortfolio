@@ -45,6 +45,8 @@
    */
   let navbarlinks = select('#navbar .scrollto', true)
   let questIcons = select('#navbar .QuestMark', true);
+
+  let progress = 0;
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
 
@@ -56,7 +58,35 @@
         navbarlink.classList.add('active')
 
         let QuestIcon = navbarlink.querySelector('.QuestMark');
-        QuestIcon.classList.add('disable-Image');
+
+        if(QuestIcon != null){
+          QuestIcon.classList.add('disable-Image');
+
+          if(progress < 100)
+          progress += 25;
+
+          /* Update Progress Bar UI */
+          let progressImg = document.querySelector('.questBar');
+          
+          switch(progress){
+            case 25:
+              progressImg.src = "assets/img/Progress/Progress1.png";
+              break;
+            case 50:
+              progressImg.src = "assets/img/Progress/Progress2.png";
+              break;
+            case 75:
+              progressImg.src = "assets/img/Progress/Progress3.png";
+              break;
+            case 100:
+              progressImg.src = "assets/img/Progress/Progress4.png";
+              break;
+          }
+
+          QuestIcon.classList.remove('QuestMark');
+        }
+
+        
 
       } else {
         navbarlink.classList.remove('active')
@@ -65,6 +95,7 @@
   }
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
+
 
   /**
    * Scrolls to an element with header offset
