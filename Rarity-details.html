@@ -170,16 +170,33 @@
                     <li>Minimaps</li>
                     <li>Equipping Clothes</li>
                     <li>Quick Drag (Shift+Click seen in games such as Minecraft)</li>
-                  </ul> <br> 
+                    <li>AI Movement & Combat</li>
+                  </ul> <br>
+
+                  
+                </div>
+
+                <h5>One of the problems faced and how I overcame it: </h5>
+                <div style="margin-left: 1.25em">
+                  Because the game was designed to have a "Unique Enemy" in each dungeon, 
+                  I had to think of a way to create enemies which I could use as normal enemies but also reuse as unique enemies.<br><br>
+
+                  My solution was to create 2 types of Enemy Classes, a Melee class and a Ranged class. The melee class would contain values such as, 
+                  fire-rate, attack range, and a function used as a trigger event at the end of the animation to inflict damage. 
+                  While the range would contain a fire-rate value, and an object which is spawned as a projectile which inflicts damage when hitting the player.<br><br>
+
+                  This type of design was broad enough to add the unique enemies we had described in the Game Design Document(GDD).
+                  For Example, we wanted to implement a "Spin Enemy" with circular blades which would damage the player at a high rate when hit.
+                  With the classes I have programmed, all the designer had to do was to use the normal melee enemy, change up the animations, and increase the fire-rate.<br><br>
                 </div>
                   
                 <h5>Reflection: </h5>
                 <div style="margin-left: 1.25em">
-                  A boss fight was also added in later stages of development, 
-                  which is something I <b>regret</b> starting so <b>late</b> on. 
-                  As a deadline was approaching, 
+                  A boss fight was also added really late in the stages of development, 
+                  which is something I <b>regret</b> starting so <b>late</b> on as we could've focused on that instead of the many other tiny features with have added. 
+                  A deadline was approaching and 
                   I did not get to fully complete the whole boss fight stage because we had to focus on polishing and fixing other more important parts of the game.
-                  But similar to other mistakes I have done in the past, I have to learn from it and who knows, I may go back to finish developing the boss fights some time in the future.
+                  But similarly to other mistakes I have done in the past, I had to learn from it and who knows, I may go back to finish developing the boss fights some time in the future.
                 </div>
                 </p>
             </div>
@@ -187,7 +204,10 @@
 
             <div class="portfolio-description"><h2>As a Systems Programmer: </h2>
               <p> 
-
+                <h5>Early Stages and Initial Thought Process: </h5>
+                <div style="margin-left: 1.25em">
+                  
+                </div>
               </p></div>
           </div>
         </div>
