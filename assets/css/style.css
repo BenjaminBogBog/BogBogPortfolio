@@ -573,7 +573,8 @@ section {
 # Rarity Portfolio Details
 --------------------------------------------------------------*/
 
-.portfolio .rarity-portfolio-wrap {
+.portfolio .rarity-portfolio-wrap { 
+  border-radius: 5px;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -644,7 +645,8 @@ section {
 # THE Portfolio Details
 --------------------------------------------------------------*/
 
-.portfolio .the-portfolio-wrap {
+.portfolio .the-portfolio-wrap { 
+  border-radius: 5px;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -715,7 +717,8 @@ section {
 # Kinetic Portfolio Details
 --------------------------------------------------------------*/
 
-.portfolio .kinetic-portfolio-wrap {
+.portfolio .kinetic-portfolio-wrap { 
+  border-radius: 5px;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -786,7 +789,8 @@ section {
 # Crappy Bird Portfolio Details
 --------------------------------------------------------------*/
 
-.portfolio .bird-portfolio-wrap {
+.portfolio .bird-portfolio-wrap { 
+  border-radius: 5px;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -857,7 +861,8 @@ section {
 # Harbour Master Portfolio Details
 --------------------------------------------------------------*/
 
-.portfolio .hbm-portfolio-wrap {
+.portfolio .hbm-portfolio-wrap { 
+  border-radius: 5px;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -928,7 +933,8 @@ section {
 # PinGolf Portfolio Details
 --------------------------------------------------------------*/
 
-.portfolio .pingolf-portfolio-wrap {
+.portfolio .pingolf-portfolio-wrap { 
+  border-radius: 5px;
   transition: 0.3s;
   position: relative;
   overflow: hidden;

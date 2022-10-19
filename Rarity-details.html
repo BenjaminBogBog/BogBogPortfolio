@@ -153,11 +153,11 @@
               <!--GAMEPLAY PROGRAMMER-->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     As a Gameplay Programmer
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <div class="portfolio-description">
                       <h5>Early Stages and Initial Thought Process: </h5>
@@ -249,12 +249,22 @@
                           It is a prefab which can be placed into the scene, 
                           each chest will be placed into 3 different groups, which upon starting the game, the code selects a one of the chest groups randomly on which will stay in the scene, while the others are destroyed. 
                           This creates a spawn system which feels randomized but at the same time it is manually hand-placed into the game.
-                          As for selecting the contents inside the chest, 
-                        </div>
-        
-                        <h5>11: </h5>
-                        <div style="margin-left: 1.25em">
-                          Dasd<br><br>
+                          As for selecting the contents inside the chest, I have a declared some variables which designers can adjust depending on what kinds of contents he wants in that specific chest.<br><br>
+
+                          <b>Inventory System</b>: One of the things I spent the most time polishing is definitely this system, the inventory system. 
+                          The inventory is split up into 3 parts: the character item slots, the backpack, and the toolbar. 
+                          In my opinion the hardest part of this system was the transfer of items into different parts of the inventory, since one of them requires the item to be displayed different (as a card).
+                          The other things this system features is a sorting feature in the backpack, which sorts the item by it's <b>Rarity</b>.<br><br>
+
+                          <b>Cutscene System</b>: To be honest, the cutscene system in this game could be improved in terms of efficiency. 
+                          The cutscene system is a Pre-placed UI object containing a timeline, which is spawned into the scene once a cutscene function is called, the object contains a "Play On Awake" timeline which will start playing and destroys itself once done playing.<br><br>
+                          
+                          <b>Item Storage System</b>: Now for a game similar to Rarity, you might be wondering where all the 100 items are kept. 
+                          That answer is simple, Rarity keeps it's items in a database which is further explained in the "As a Backend developer" section of this page.
+                          Rarity, however does not constantly try to connect to the database constantly as it is an online database and it may cause issues. 
+                          So I have created a 'Database Manager' object with a <i>Refresh</i> button in the Unity game engine, which then retrieves data from the online database, and disconnects once it's done.
+                          This particular object will then be the 'Hub' for retrieving item data and is utilized in systems such as the chest, the inventory, and the codex.
+
                         </div>
                       </p></div>
                   </div>
@@ -271,7 +281,23 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <h5>What I did as a backend developer: </h5>
+                        <div style="margin-left: 1.25em">
+                          One of the things I immediately started working on was setting up the backend of Rarity, 
+                          as the team had planned to feature 100 items and we need a space, a database, to store all the values to avoid inconsistency. 
+                          While setting up the database, I noticed another problem, how will my team members add items to the database without any knowledge of MySQL? 
+                          So I set up a quick webpage which my team members has access to, it will feature a list of items currently in the database, 
+                          and a button where they can fill out a form to automatically add an item. <br><br>
+
+                          <b>A screenshot of the page where they can add items</b>
+                          <img class="img-fluid" src="assets/img/portfolio/Rarity/AddItem.png" alt=""><br><br>
+
+                          <b>A screenshot of the webpage displaying items</b><br><br>
+                          <img class="img-fluid" src="assets/img/portfolio/Rarity/itemList.png" alt=""><br><br>
+                          <br><br>
+
+                          and of course, here is the link for anyone wanting to check it out: <a href="http://rarity-iitiimu.herokuapp.com">rarity-iitiimu.herokuapp.com</a>
+                        </div>
                   </div>
                 </div>
               </div>
