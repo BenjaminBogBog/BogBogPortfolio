@@ -146,59 +146,136 @@
             </div>
 
           <div class="col-lg-12">
-            <br><h1>In-depth description of my contributions</h1>
 
-            <div class="portfolio-description"><h2>As a Gameplay Programmer: </h2>
-              <h5>Early Stages and Initial Thought Process: </h5>
+            <br><h1>In-depth description of my contributions</h1><br>
 
-                <div style="margin-left: 1.25em">
-                <p>I made sure to focus on using only <b>2 keys</b> for gameplay, one primarily used for interactions while the other for abilities,
-                  and of course, most importantly I made sure to keep in mind to reflect on the enjoyment of the gameplay before implementing any feature.<br><br>
-
-                  From there, I started to program the basic gameplay mechanics such as, Movement, Combat, Abilities, and Enemies. 
-                  Of course, I did not do all of that immediately, I made sure to finish all the mechanics neccessary for a playable prototype first. 
-                  I started with Movement, followed by Combat, which was the weapon "swinging", then implemented enemies which can hurt you. 
-                  Programming the usage of the charms/abilities came after we made sure the playable prototype was solid and working.<br><br>
+            <div class="accordion" id="accordionExample">
+              <!--GAMEPLAY PROGRAMMER-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    As a Gameplay Programmer
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="portfolio-description">
+                      <h5>Early Stages and Initial Thought Process: </h5>
+        
+                        <div style="margin-left: 1.25em">
+                        <p>I made sure to focus on using only <b>2 keys</b> for gameplay, one primarily used for interactions while the other for abilities,
+                          and of course, most importantly I made sure to keep in mind to reflect on the enjoyment of the gameplay before implementing any feature.<br><br>
+        
+                          From there, I started to program the basic gameplay mechanics such as, Movement, Combat, Abilities, and Enemies. 
+                          Of course, I did not do all of that immediately, I made sure to finish all the mechanics neccessary for a playable prototype first. 
+                          I started with Movement, followed by Combat, which was the weapon "swinging", then implemented enemies which can hurt you. 
+                          Programming the usage of the charms/abilities came after we made sure the playable prototype was solid and working.<br><br>
+                        </div>
+        
+                        <h5>Mid-Stages: </h5>
+                        <div style="margin-left: 1.25em">
+                          After finishing a complete working early version of the playable prototype (which included, Movement, Combat, Abilities, Enemies and Interactions),
+                          in later stages of development I implemented features such as: <br> 
+        
+                          <ul>
+                            <li>Minimaps</li>
+                            <li>Equipping Clothes</li>
+                            <li>Quick Drag (Shift+Click seen in games such as Minecraft)</li>
+                            <li>AI Movement & Combat</li>
+                          </ul> <br>
+        
+                          
+                        </div>
+        
+                        <h5>One of the problems faced and how I overcame it: </h5>
+                        <div style="margin-left: 1.25em">
+                          Because the game was designed to have a "Unique Enemy" in each dungeon, 
+                          I had to think of a way to create enemies which I could use as normal enemies but also reuse as unique enemies.<br><br>
+        
+                          My solution was to create 2 types of Enemy Classes, a Melee class and a Ranged class. The melee class would contain values such as, 
+                          fire-rate, attack range, and a function used as a trigger event at the end of the animation to inflict damage. 
+                          While the range would contain a fire-rate value, and an object which is spawned as a projectile which inflicts damage when hitting the player.<br><br>
+        
+                          This type of design was broad enough to add the unique enemies we had described in the Game Design Document(GDD).
+                          For Example, we wanted to implement a "Spin Enemy" with circular blades which would damage the player at a high rate when hit.
+                          With the classes I have programmed, all the designer had to do was to use the normal melee enemy, change up the animations, and increase the fire-rate.<br><br>
+                        </div>
+                          
+                        <h5>Reflection: </h5>
+                        <div style="margin-left: 1.25em">
+                          A boss fight was also added really late in the stages of development, 
+                          which is something I <b>regret</b> starting so <b>late</b> on as we could've focused on that instead of the many other tiny features with have added. 
+                          A deadline was approaching and 
+                          I did not get to fully complete the whole boss fight stage because we had to focus on polishing and fixing other more important parts of the game.
+                          But similarly to other mistakes I have done in the past, I had to learn from it and who knows, I may go back to finish developing the boss fights some time in the future.
+                        </div>
+                        </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <!--END GAMEPLAY PROGRAMMER-->
+              <!--SYSTEMS PROGRAMMER-->
+              <div class="accordion-item">
+                
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    As a Systems Programmer
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="portfolio-description">
+                      <p> 
+                        <h5>My role as the systems programmer: </h5>
+                        <div style="margin-left: 1.25em">
+                          During the development of Rarity I used my innate skills of problem solving and logical thinking to create systems in each and *Almost* every part of the game.
+                          It was one of my primary roles in this very small team.<br><br>
+                        </div>
 
-                <h5>Mid-Stages: </h5>
-                <div style="margin-left: 1.25em">
-                  After finishing a complete working early version of the playable prototype (which included, Movement, Combat, Abilities, Enemies and Interactions),
-                  in later stages of development I implemented features such as: <br> 
+                        <h5>Systems I worked on: </h5>
+                        <div style="margin-left: 1.25em">
+                          Rarity is a pretty big game in my standards as a student, and for a small team like ours. 
+                          It requires many systems to be built in order for the game to fully functions. So as a systems programmer in this project, 
+                          it is exactly as I did, I spent <i>a lot</i> of time working on the systems, and fixing issues which comes with it.<br><br>
 
-                  <ul>
-                    <li>Minimaps</li>
-                    <li>Equipping Clothes</li>
-                    <li>Quick Drag (Shift+Click seen in games such as Minecraft)</li>
-                    <li>AI Movement & Combat</li>
-                  </ul> <br>
+                          The system's I worked on will be listed below along with it's descriptions: <br><br>
+                          <b>Monologue/Dialogue System</b>: A system built for the narrators to use when implementing monologues/dialogues. 
+                          The system contains an many arrays of predetermined strings used as monologue/dialogue, and all the narrators had to do was edit these string depend on which scenario the game is in.
+                          In the game itself, in each scenario a monolgue/dialogue is used, a function is called from this monlogue/dialogue system taking in a string array as the parameter which it will spawn a UI prefab and then iterate the array line-by-line in the UI.
+                          And of course, the system records the "SPACE" input to skip/proceed to the next line.<br><br>
 
-                  
+                          <b>Chest System</b>: The chest system is simple. 
+                          It is a prefab which can be placed into the scene, 
+                          each chest will be placed into 3 different groups, which upon starting the game, the code selects a one of the chest groups randomly on which will stay in the scene, while the others are destroyed. 
+                          This creates a spawn system which feels randomized but at the same time it is manually hand-placed into the game.
+                          As for selecting the contents inside the chest, 
+                        </div>
+        
+                        <h5>11: </h5>
+                        <div style="margin-left: 1.25em">
+                          Dasd<br><br>
+                        </div>
+                      </p></div>
+                  </div>
                 </div>
-
-                <h5>One of the problems faced and how I overcame it: </h5>
-                <div style="margin-left: 1.25em">
-                  Because the game was designed to have a "Unique Enemy" in each dungeon, 
-                  I had to think of a way to create enemies which I could use as normal enemies but also reuse as unique enemies.<br><br>
-
-                  My solution was to create 2 types of Enemy Classes, a Melee class and a Ranged class. The melee class would contain values such as, 
-                  fire-rate, attack range, and a function used as a trigger event at the end of the animation to inflict damage. 
-                  While the range would contain a fire-rate value, and an object which is spawned as a projectile which inflicts damage when hitting the player.<br><br>
-
-                  This type of design was broad enough to add the unique enemies we had described in the Game Design Document(GDD).
-                  For Example, we wanted to implement a "Spin Enemy" with circular blades which would damage the player at a high rate when hit.
-                  With the classes I have programmed, all the designer had to do was to use the normal melee enemy, change up the animations, and increase the fire-rate.<br><br>
+                
+              </div>
+              <!--END SYSTEMS PROGRAMMER-->
+              <!--BACKEND DEVELOPER-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Backend Developer
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
                 </div>
-                  
-                <h5>Reflection: </h5>
-                <div style="margin-left: 1.25em">
-                  A boss fight was also added really late in the stages of development, 
-                  which is something I <b>regret</b> starting so <b>late</b> on as we could've focused on that instead of the many other tiny features with have added. 
-                  A deadline was approaching and 
-                  I did not get to fully complete the whole boss fight stage because we had to focus on polishing and fixing other more important parts of the game.
-                  But similarly to other mistakes I have done in the past, I had to learn from it and who knows, I may go back to finish developing the boss fights some time in the future.
-                </div>
-                </p>
+              </div>
+              <!--END BACKEND DEVELOPER-->
             </div>
               
 
@@ -217,20 +294,6 @@
               - Databases
               - Webpage to add items
              -->
-
-            <div class="portfolio-description"><h2>As a Systems Programmer: </h2>
-              <p> 
-                <h5>My role as the systems programmer: </h5>
-                <div style="margin-left: 1.25em">
-                  During the development of Rarity I used my innate skills of problem solving and logical thinking to create systems in each and *Almost* every part of the game.
-                  It was one of my primary roles in this very small team.<br><br>
-                </div>
-
-                <h5>11: </h5>
-                <div style="margin-left: 1.25em">
-                  Dasd<br><br>
-                </div>
-              </p></div>
           </div>
         </div>
 
@@ -254,7 +317,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> and Further edited and designed by Benjamin Berg
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> and Further edited by Benjamin Berg
       </div>
     </div>
   </footer><!-- End  Footer -->
