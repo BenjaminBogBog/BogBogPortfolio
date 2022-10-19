@@ -196,15 +196,18 @@
                           fire-rate, attack range, and a function used as a trigger event at the end of the animation to inflict damage. 
                           While the range would contain a fire-rate value, and an object which is spawned as a projectile which inflicts damage when hitting the player.<br><br>
         
-                          This type of design was broad enough to add the unique enemies we had described in the Game Design Document(GDD).
+                          This type of design was broad enough to implement into the unique enemies we had described in the Game Design Document(GDD).
                           For Example, we wanted to implement a "Spin Enemy" with circular blades which would damage the player at a high rate when hit.
                           With the classes I have programmed, all the designer had to do was to use the normal melee enemy, change up the animations, and increase the fire-rate.<br><br>
+
+                          <img class="img-fluid" src="assets/img/portfolio/Rarity/SpinBlade.gif" alt="">
+                          <br><br>
                         </div>
                           
                         <h5>Reflection: </h5>
                         <div style="margin-left: 1.25em">
                           A boss fight was also added really late in the stages of development, 
-                          which is something I <b>regret</b> starting so <b>late</b> on as we could've focused on that instead of the many other tiny features with have added. 
+                          which is something I <b>regret</b> starting so <b>late</b> on as we could've focused on that instead of the many other tiny features we have added. 
                           A deadline was approaching and 
                           I did not get to fully complete the whole boss fight stage because we had to focus on polishing and fixing other more important parts of the game.
                           But similarly to other mistakes I have done in the past, I had to learn from it and who knows, I may go back to finish developing the boss fights some time in the future.
@@ -236,13 +239,13 @@
                         <h5>Systems I worked on: </h5>
                         <div style="margin-left: 1.25em">
                           Rarity is a pretty big game in my standards as a student, and for a small team like ours. 
-                          It requires many systems to be built in order for the game to fully functions. So as a systems programmer in this project, 
-                          it is exactly as I did, I spent <i>a lot</i> of time working on the systems, and fixing issues which comes with it.<br><br>
+                          It requires many systems to be built in order for the game to fully function. So as a systems programmer in this project, 
+                          I did exactly that. I spent <i>a lot</i> of time working on the systems, and fixing issues which comes with it.<br><br>
 
                           The system's I worked on will be listed below along with it's descriptions: <br><br>
-                          <b>Monologue/Dialogue System</b>: A system built for the narrators to use when implementing monologues/dialogues. 
-                          The system contains an many arrays of predetermined strings used as monologue/dialogue, and all the narrators had to do was edit these string depend on which scenario the game is in.
-                          In the game itself, in each scenario a monolgue/dialogue is used, a function is called from this monlogue/dialogue system taking in a string array as the parameter which it will spawn a UI prefab and then iterate the array line-by-line in the UI.
+                          <b>Monologue/Dialogue System</b>: A system built for the writers to use when implementing monologues/dialogues. 
+                          The system contains many arrays of predetermined strings used as monologue/dialogue, and all the writer had to do was edit these string inside the engine depending on which scenario the monologue/dialogue is set.
+                          In the game itself, each scenario a monolgue/dialogue is used, a function is called from this monlogue/dialogue system taking in a string array as the parameter, which it will spawn a UI prefab and then iterate the array line-by-line in the UI.
                           And of course, the system records the "SPACE" input to skip/proceed to the next line.<br><br>
 
                           <b>Chest System</b>: The chest system is simple. 
