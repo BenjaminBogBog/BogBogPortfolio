@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Benjamin Berg's Portfolio</title>
+  <title>THE details</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -176,6 +176,34 @@
             <br><h1>In-depth description of my contributions</h1><br>
 
             <div class="accordion" id="accordionExample">
+                            <!--GAME DESIGNER-->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  As a Game Designer
+                                </button>
+                              </h2>
+                              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <h5>The Brainstorm Process: </h5>
+                                      <div style="margin-left: 1.25em">
+                                          To be honest, we were all scratching our heads when the theme of the game jam was announced. What could one make to fit into the "Jam" theme. <br>
+                                          Our initial thought was, "okay we know a lot of people may be thinking about creating either a rhythm game, or a strawberry jam game", and we wanted to be unique. We wanted to stand out.
+                                          So we started thinking more about what else the word "Jam" could mean. I remember all of us just scrolling through online dictionaries and encyclopedias for 20-30 mins just pulling out every possible definition of "Jam".
+                                          One of the definition which stood out was this particular one, signal jamming or causing interference. <br><br> 
+                                          <img class="img-fluid" src="./assets/img/portfolio/THE/JamDefinition.png" alt=""> <br><br>
+                                      </div>
+              
+                                      <h5>The Game idea: </h5>
+                                      <div style="margin-left: 1.25em">
+                                          So based of that definition we began to develop our idea and finally ended with a 3D platformer where 2 players are racing against each other, 
+                                          they will be able to pick up power-ups which grants the player the ability the jam either their own "signal" for an advantage, such as giving themselves a speed boost or "hacking" the gravity to make them fly, 
+                                           or jam the opponents signal to sabotage them, such as rubberbanding them back to a place they were 3 seconds ago.
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--END GAME DESIGNER-->
               <!--NETWORK PROGRAMMER-->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -186,57 +214,36 @@
                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <div class="portfolio-description">
-                      <h5>Early Stages and Initial Thought Process: </h5>
+                      <h3>The Reality of the Situation </h3><br>
         
                         <div style="margin-left: 1.25em">
-                        <p>I made sure to focus on using only <b>2 keys</b> for gameplay, one primarily used for interactions while the other for abilities,
-                          and of course, most importantly I made sure to keep in mind to reflect on the enjoyment of the gameplay before implementing any feature.<br><br>
-        
-                          From there, I started to program the basic gameplay mechanics such as, Movement, Combat, Abilities, and Enemies. 
-                          Of course, I did not do all of that immediately, I made sure to finish all the mechanics neccessary for a playable prototype first. 
-                          I started with Movement, followed by Combat, which was the weapon "swinging", then implemented enemies which can hurt you. 
-                          Programming the usage of the charms/abilities came after we made sure the playable prototype was solid and working.<br><br>
-                        </div>
-        
-                        <h5>Mid-Stages: </h5>
-                        <div style="margin-left: 1.25em">
-                          After finishing a complete working early version of the playable prototype (which included, Movement, Combat, Abilities, Enemies and Interactions),
-                          in later stages of development I implemented features such as: <br> 
-        
-                          <ul>
-                            <li>Minimaps</li>
-                            <li>Equipping Clothes</li>
-                            <li>Quick Drag (Shift+Click seen in games such as Minecraft)</li>
-                            <li>AI Movement & Combat</li>
-                          </ul> <br>
-        
                           
                         </div>
         
-                        <h5>One of the problems faced and how I overcame it: </h5>
+                        <h5>Why it was challenging: </h5>
                         <div style="margin-left: 1.25em">
-                          Because the game was designed to have a "Unique Enemy" in each dungeon, 
-                          I had to think of a way to create enemies which I could use as normal enemies but also reuse as unique enemies.<br><br>
-        
-                          My solution was to create 2 types of Enemy Classes, a Melee class and a Ranged class. The melee class would contain values such as, 
-                          fire-rate, attack range, and a function used as a trigger event at the end of the animation to inflict damage. 
-                          While the range would contain a fire-rate value, and an object which is spawned as a projectile which inflicts damage when hitting the player.<br><br>
-        
-                          This type of design was broad enough to implement into the unique enemies we had described in the Game Design Document(GDD).
-                          For Example, we wanted to implement a "Spin Enemy" with circular blades which would damage the player at a high rate when hit.
-                          With the classes I have programmed, all the designer had to do was to use the normal melee enemy, change up the animations, and increase the fire-rate.<br><br>
-
-                          <img class="img-fluid" src="assets/img/portfolio/Rarity/SpinBlade.gif" alt="">
+                          There were a number of challenges I realized we had to overcome once we had decided on adding multiplayer/networking to our game.
+                          First of all, the game jam only lasted 48 hours so we were already pressed for time. Secondly, other than experimenting, I've never created an online game before.
+                          And lastly, Unity (the game engine used for this project) had very limited resources and documentations regarding online networking. With all of those challenges,
+                          I am frankly surprised and proud we were able to pull this game off, no less winning some awards.
                           <br><br>
                         </div>
                           
-                        <h5>Reflection: </h5>
+                        <h5>How my previous experimentations proved to be crucial: </h5>
                         <div style="margin-left: 1.25em">
-                          A boss fight was also added really late in the stages of development, 
-                          which is something I <b>regret</b> starting so <b>late</b> on as we could've focused on that instead of the many other tiny features we have added. 
-                          A deadline was approaching and 
-                          I did not get to fully complete the whole boss fight stage because we had to focus on polishing and fixing other more important parts of the game.
-                          But similarly to other mistakes I have done in the past, I had to learn from it and who knows, I may go back to finish developing the boss fights some time in the future.
+                          The whole decision on implementing multiplayer was initially my idea. 
+                          Since I had done some experimentations before on multiplayer features using Unity and the Photon Engine, 
+                          I wanted to challenge myself a little so I confidently proposed to the team about adding online multiplayer to which they agreed. 
+                          It was really risky indeed, but I wanted to make this experience a little more fun and challenging as this was also my first game-jam.
+                          Once the game-jam was underway I immediately began working on implementing one of the core online features, Syncing Player Movement. 
+                          At first, my team did not seem very convinced, after a few hours I showed them a prototype of the online movement and the project looked like it could be done after all.
+                          The level designer had already put together the first level and so we got to testing and this was the result after several hours of progress and a bit of tweaking: <br><br>
+
+                          <i><b>Keep in mind this was a very early version, there was no menu, no UI, only the movement and the level. 
+                            In the video we counted 3..2..1..GO in real life and tried to simulate how the game would feel.</b></i><br><br>
+
+                          <img class="img-fluid" src="./assets/img/portfolio/THE/THEEarlyGameplay.gif" alt="">
+
                         </div>
                         </p>
                     </div>
@@ -246,159 +253,34 @@
               <!--END NETWORK PROGRAMMER-->
               <!--GAMEPLAY PROGRAMMER-->
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    As a Gameplay Programmer
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <div class="portfolio-description">
-                      <h5>Early Stages and Initial Thought Process: </h5>
-        
-                        <div style="margin-left: 1.25em">
-                        <p>I made sure to focus on using only <b>2 keys</b> for gameplay, one primarily used for interactions while the other for abilities,
-                          and of course, most importantly I made sure to keep in mind to reflect on the enjoyment of the gameplay before implementing any feature.<br><br>
-        
-                          From there, I started to program the basic gameplay mechanics such as, Movement, Combat, Abilities, and Enemies. 
-                          Of course, I did not do all of that immediately, I made sure to finish all the mechanics neccessary for a playable prototype first. 
-                          I started with Movement, followed by Combat, which was the weapon "swinging", then implemented enemies which can hurt you. 
-                          Programming the usage of the charms/abilities came after we made sure the playable prototype was solid and working.<br><br>
-                        </div>
-        
-                        <h5>Mid-Stages: </h5>
-                        <div style="margin-left: 1.25em">
-                          After finishing a complete working early version of the playable prototype (which included, Movement, Combat, Abilities, Enemies and Interactions),
-                          in later stages of development I implemented features such as: <br> 
-        
-                          <ul>
-                            <li>Minimaps</li>
-                            <li>Equipping Clothes</li>
-                            <li>Quick Drag (Shift+Click seen in games such as Minecraft)</li>
-                            <li>AI Movement & Combat</li>
-                          </ul> <br>
-        
-                          
-                        </div>
-        
-                        <h5>One of the problems faced and how I overcame it: </h5>
-                        <div style="margin-left: 1.25em">
-                          Because the game was designed to have a "Unique Enemy" in each dungeon, 
-                          I had to think of a way to create enemies which I could use as normal enemies but also reuse as unique enemies.<br><br>
-        
-                          My solution was to create 2 types of Enemy Classes, a Melee class and a Ranged class. The melee class would contain values such as, 
-                          fire-rate, attack range, and a function used as a trigger event at the end of the animation to inflict damage. 
-                          While the range would contain a fire-rate value, and an object which is spawned as a projectile which inflicts damage when hitting the player.<br><br>
-        
-                          This type of design was broad enough to implement into the unique enemies we had described in the Game Design Document(GDD).
-                          For Example, we wanted to implement a "Spin Enemy" with circular blades which would damage the player at a high rate when hit.
-                          With the classes I have programmed, all the designer had to do was to use the normal melee enemy, change up the animations, and increase the fire-rate.<br><br>
-
-                          <img class="img-fluid" src="assets/img/portfolio/Rarity/SpinBlade.gif" alt="">
-                          <br><br>
-                        </div>
-                          
-                        <h5>Reflection: </h5>
-                        <div style="margin-left: 1.25em">
-                          A boss fight was also added really late in the stages of development, 
-                          which is something I <b>regret</b> starting so <b>late</b> on as we could've focused on that instead of the many other tiny features we have added. 
-                          A deadline was approaching and 
-                          I did not get to fully complete the whole boss fight stage because we had to focus on polishing and fixing other more important parts of the game.
-                          But similarly to other mistakes I have done in the past, I had to learn from it and who knows, I may go back to finish developing the boss fights some time in the future.
-                        </div>
-                        </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--END GAMEPLAY PROGRAMMER-->
-              <!--SYSTEMS PROGRAMMER-->
-              <div class="accordion-item">
-                
                 <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    As a Systems Programmer
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    As a Gameplay Programmer
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <div class="portfolio-description">
-                      <p> 
-                        <h5>My role as the systems programmer: </h5>
+                      <h5>An Area within my reach: </h5>
+        
                         <div style="margin-left: 1.25em">
-                          During the development of Rarity I used my innate skills of problem solving and logical thinking to create systems in each and *Almost* every part of the game.
-                          It was one of my primary roles in this very small team.<br><br>
-                        </div>
+                        Gameplay programming was something more within my realm and something I have been doing for a while so this wasn't the most challenging part of the jam in my opinion.
+                        Although having online multiplayer did also mean, I had to program the gameplay to fit and become compatible with the network.
+                        </div><br>
 
-                        <h5>Systems I worked on: </h5>
+                        <h5>Communicating between Gameplay and all the players: </h5>
+        
                         <div style="margin-left: 1.25em">
-                          Rarity is a pretty big game in my standards as a student, and for a small team like ours. 
-                          It requires many systems to be built in order for the game to fully function. So as a systems programmer in this project, 
-                          I did exactly that. I spent <i>a lot</i> of time working on the systems, and fixing issues which comes with it.<br><br>
-
-                          The system's I worked on will be listed below along with it's descriptions: <br><br>
-                          <b>Monologue/Dialogue System</b>: A system built for the writers to use when implementing monologues/dialogues. 
-                          The system contains many arrays of predetermined strings used as monologue/dialogue, and all the writer had to do was edit these string inside the engine depending on which scenario the monologue/dialogue is set.
-                          In the game itself, each scenario a monolgue/dialogue is used, a function is called from this monlogue/dialogue system taking in a string array as the parameter, which it will spawn a UI prefab and then iterate the array line-by-line in the UI.
-                          And of course, the system records the "SPACE" input to skip/proceed to the next line.<br><br>
-
-                          <b>Chest System</b>: The chest system is simple. 
-                          It is a prefab which can be placed into the scene, 
-                          each chest will be placed into 3 different groups, which upon starting the game, the code selects a one of the chest groups randomly on which will stay in the scene, while the others are destroyed. 
-                          This creates a spawn system which feels randomized but at the same time it is manually hand-placed into the game.
-                          As for selecting the contents inside the chest, I have a declared some variables which designers can adjust depending on what kinds of contents he wants in that specific chest.<br><br>
-
-                          <b>Inventory System</b>: One of the things I spent the most time polishing is definitely this system, the inventory system. 
-                          The inventory is split up into 3 parts: the character item slots, the backpack, and the toolbar. 
-                          In my opinion the hardest part of this system was the transfer of items into different parts of the inventory, since one of them requires the item to be displayed different (as a card).
-                          The other things this system features is a sorting feature in the backpack, which sorts the item by it's <b>Rarity</b>.<br><br>
-
-                          <b>Cutscene System</b>: To be honest, the cutscene system in this game could be improved in terms of efficiency. 
-                          The cutscene system is a Pre-placed UI object containing a timeline, which is spawned into the scene once a cutscene function is called, the object contains a "Play On Awake" timeline which will start playing and destroys itself once done playing.<br><br>
-                          
-                          <b>Item Storage System</b>: Now for a game similar to Rarity, you might be wondering where all the 100 items are kept. 
-                          That answer is simple, Rarity keeps it's items in a database which is further explained in the "As a Backend developer" section of this page.
-                          Rarity, however does not constantly try to connect to the database constantly as it is an online database and it may cause issues. 
-                          So I have created a 'Database Manager' object with a <i>Refresh</i> button in the Unity game engine, which then retrieves data from the online database, and disconnects once it's done.
-                          This particular object will then be the 'Hub' for retrieving item data and is utilized in systems such as the chest, the inventory, and the codex.
-
+                        During the development we ran into a lot of issues regarding network replication. We would call an RPC from the wrong source resulting in a lot of duplicates in the scene.
+                        We realized what was happening and immediately began being more careful about where each object would spawn from and where things were going into the code. 
+                        Other than, trying to make movement feel smoother, and tackling duplicated objects, there weren't much obstacles we faced while programming the gameplay.
                         </div>
-                      </p></div>
-                  </div>
-                </div>
-                
-              </div>
-              <!--END SYSTEMS PROGRAMMER-->
-              <!--GAME DESIGNER-->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    As a Game Designer
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <h5>What I did as a backend developer: </h5>
-                        <div style="margin-left: 1.25em">
-                          One of the things I immediately started working on was setting up the backend of Rarity, 
-                          as the team had planned to feature 100 items and we need a space, a database, to store all the values to avoid inconsistency. 
-                          While setting up the database, I noticed another problem, how will my team members add items to the database without any knowledge of MySQL? 
-                          So I set up a quick webpage which my team members has access to, it will feature a list of items currently in the database, 
-                          and a button where they can fill out a form to automatically add an item. <br><br>
-
-                          <b>A screenshot of the page where they can add items</b>
-                          <img class="img-fluid" src="assets/img/portfolio/Rarity/AddItem.png" alt=""><br><br>
-
-                          <b>A screenshot of the webpage displaying items</b><br><br>
-                          <img class="img-fluid" src="assets/img/portfolio/Rarity/itemList.png" alt=""><br><br>
-                          <br><br>
-
-                          and of course, here is the link for anyone wanting to check it out: <a href="http://rarity-iitiimu.herokuapp.com">rarity-iitiimu.herokuapp.com</a>
-                        </div>
+                      
+                    </div>
                   </div>
                 </div>
               </div>
-              <!--END GAME DESIGNER-->
+              <!--END GAMEPLAY PROGRAMMER-->
             </div>
               
 
