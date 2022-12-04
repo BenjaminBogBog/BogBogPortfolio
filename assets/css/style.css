@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: #ffa600;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #ffc558;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #ffbb00;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -56,7 +56,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: #ffbb00;
   color: #fff;
 }
 
@@ -78,7 +78,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #241100;
   overflow-y: auto;
 }
 
@@ -137,7 +137,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #ffbb00;
   color: #fff;
   text-decoration: none;
 }
@@ -205,7 +205,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: #ffbb00;
 }
 
 /* Mobile Navigation */
@@ -218,7 +218,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #ffbb00;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -244,13 +244,13 @@ h6 {
 #hero {
   width: 100%;
   height: 85vh;
-  background: url("../img/bogboghero.jpg") top center;
+  background: url("../img/Collage.gif") top center;
   background-size: cover;
 }
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.747);
   height: 85vh;
   position: absolute;
   bottom: 0;
@@ -285,7 +285,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #f58f1a;
 }
 
 @media (min-width: 1024px) {
@@ -329,7 +329,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #745500;
 }
 
 .section-title h2::after {
@@ -338,7 +338,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #ffbb00;
   bottom: 0;
   left: 0;
 }
@@ -353,7 +353,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #815f00;
 }
 
 .about .content ul {
@@ -374,7 +374,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #ffbb00;
   line-height: 0;
 }
 
@@ -397,7 +397,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #ffbb00;
   float: left;
   line-height: 0;
 }
@@ -416,21 +416,21 @@ section {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: #ffbb00;
 }
 
 .facts .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #122f57;
+  color: #745500;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .facts .count-box a:hover {
-  color: #1f5297;
+  color: #ffbb00;
 }
 
 /*--------------------------------------------------------------
@@ -467,7 +467,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: #ffbb00;
 }
 
 /*--------------------------------------------------------------
@@ -484,7 +484,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #af8000;
   position: relative;
 }
 
@@ -528,7 +528,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #c28e00;
 }
 
 /*--------------------------------------------------------------
@@ -563,7 +563,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #ffbb00;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -612,17 +612,17 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.6);
+  background: #c48f00;
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .rarity-portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #ffbb00;
 }
 
 .portfolio .rarity-portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #ffbb00;
 }
 
 .portfolio .rarity-portfolio-wrap:hover::before {
@@ -684,17 +684,17 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.6);
+  background: #c48f00;
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .the-portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #ffbb00;
 }
 
 .portfolio .the-portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #ffbb00;
 }
 
 .portfolio .the-portfolio-wrap:hover::before {
@@ -756,17 +756,17 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.6);
+  background: #c48f00;
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .kinetic-portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #ffbb00;
 }
 
 .portfolio .kinetic-portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #ffbb00;
 }
 
 .portfolio .kinetic-portfolio-wrap:hover::before {
@@ -828,17 +828,17 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.6);
+  background: #c48f00;
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .bird-portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #ffbb00;
 }
 
 .portfolio .bird-portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #ffbb00;
 }
 
 .portfolio .bird-portfolio-wrap:hover::before {
@@ -900,17 +900,17 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.6);
+  background: #c48f00;
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .hbm-portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #ffbb00;
 }
 
 .portfolio .hbm-portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #ffbb00;
 }
 
 .portfolio .hbm-portfolio-wrap:hover::before {
@@ -972,17 +972,17 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.6);
+  background: #c48f00;
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .pingolf-portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #ffbb00;
 }
 
 .portfolio .pingolf-portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #ffbb00;
 }
 
 .portfolio .pingolf-portfolio-wrap:hover::before {
@@ -1023,11 +1023,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #ffbb00;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #ffbb00;
 }
 
 .portfolio-details .portfolio-info {
@@ -1081,10 +1081,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #ffbb00;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #ffbb00;
 }
 
 .services .icon i {
@@ -1098,7 +1098,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: #ffbb00;
 }
 
 .services .title {
@@ -1113,7 +1113,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: #ffbb00;
 }
 
 .services .description {
@@ -1157,7 +1157,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #c3e8fa;
+  color: #ffdd80;
   font-size: 26px;
 }
 
@@ -1207,11 +1207,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #ffbb00;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #ffbb00;
 }
 
 /*--------------------------------------------------------------
@@ -1230,7 +1230,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #ffbb00;
   float: left;
   width: 44px;
   height: 44px;
@@ -1254,7 +1254,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #745500;
 }
 
 .contact .info .email p {
@@ -1281,14 +1281,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #ffbb00;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #ffbb00;
   color: #fff;
 }
 
@@ -1377,7 +1377,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: #ffbb00;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1386,7 +1386,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: #ffbb00;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1438,7 +1438,7 @@ section {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #0e2442;
+  color: #755600;
   content: "/";
 }
 
@@ -1504,5 +1504,5 @@ section {
 }
 
 .portfolio-indepth:hover{
-  background-color: blue;
+  background-color: orange;
 }
