@@ -76,7 +76,9 @@
       if (!navbarlink.hash) return
       let section = select(navbarlink.hash)
       if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+      if (position >= (section.offsetTop - (section.offsetTop / 8)) && position <= (section.offsetTop + section.offsetHeight)) {
+
+        console.log("position: " + position + " section offsetTop: " + section.offsetTop);
         navbarlink.classList.add('active')
 
         let QuestIcon = navbarlink.querySelector('.QuestMark');
