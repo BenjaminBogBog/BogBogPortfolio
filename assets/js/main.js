@@ -4,6 +4,45 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+let progress = 0;
+
+function OnResumeClick(){
+  console.log("CLICKED ON RESUME");
+
+  let QuestIcon = document.querySelector('#ResumeQuestMark');
+
+  if(QuestIcon){
+    QuestIcon.classList.add('disable-Image');
+
+    if(progress < 100)
+        progress += 20;
+        
+    console.log(progress);
+    /* Update Progress Bar UI */
+    let progressImg = document.querySelector('.questBar');
+
+    switch(progress){
+      case 20:
+        progressImg.src = "assets/img/Progress/Progress1.png";
+        break;
+      case 40:
+        progressImg.src = "assets/img/Progress/Progress2.png";
+        break;
+      case 60:
+        progressImg.src = "assets/img/Progress/Progress3.png";
+        break;
+      case 80:
+        progressImg.src = "assets/img/Progress/Progress4.png";
+        break;
+      case 100:
+        progressImg.src = "assets/img/Progress/Progress5.png";
+        break;
+    }
+  }
+
+}
+
 (function() {
 
   //RADAR CHART
@@ -68,7 +107,6 @@
   let navbarlinks = select('#navbar .scrollto', true)
   let questIcons = select('#navbar .QuestMark', true);
 
-  let progress = 0;
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
 
@@ -87,23 +125,26 @@
           QuestIcon.classList.add('disable-Image');
 
           if(progress < 100)
-          progress += 25;
+            progress += 20;
 
           /* Update Progress Bar UI */
           let progressImg = document.querySelector('.questBar');
           
           switch(progress){
-            case 25:
+            case 20:
               progressImg.src = "assets/img/Progress/Progress1.png";
               break;
-            case 50:
+            case 40:
               progressImg.src = "assets/img/Progress/Progress2.png";
               break;
-            case 75:
+            case 60:
               progressImg.src = "assets/img/Progress/Progress3.png";
               break;
-            case 100:
+            case 80:
               progressImg.src = "assets/img/Progress/Progress4.png";
+              break;
+            case 100:
+              progressImg.src = "assets/img/Progress/Progress5.png";
               break;
           }
 
