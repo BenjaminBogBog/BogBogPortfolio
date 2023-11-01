@@ -44,28 +44,6 @@ function OnResumeClick(){
 }
 
 (function() {
-
-  //RADAR CHART
-  var marksCanvas = document.getElementById("marksChart");
-
-  var marksData = {
-    labels: ["Unreal Engine", "Unity", "C# Programming", "C++ Programming", "PHP", "Gaming"],
-    datasets: [{
-      label: "My Experience",
-      backgroundColor: "rgba(255,166,0,0.5)",
-      data: [69, 83, 74, 60, 44, 89]
-    }]
-  };
-
-  var radarChart = new Chart(marksCanvas, {
-    type: 'radar',
-    data: marksData,
-    scales: {
-      display: false
-    }
-  });
-
-
   "use strict";
 
   /**
