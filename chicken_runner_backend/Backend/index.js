@@ -1,6 +1,8 @@
 const express = require('express');
 const mysql = require('mysql');
 
+const port = process.env.PORT || 8000;
+
 //Create connection
 const db = mysql.createPool({
     host: 'localhost',
@@ -43,9 +45,7 @@ app.get('/getUsersData', (req, res) => {
   });
 
 //Start-up the server
-var server = app.listen(8000, () => {
-    var host = server.address().address
-    var port = server.address().port
-    console.log("App is listening at port %s:%s", host, port);
+var server = app.listen(port, () => {
+    console.log("App is listening at port %s", port);
 });
 
