@@ -44,8 +44,12 @@ app.get('/getUsersData', (req, res) => {
     });
   });
 
-//Start-up the server
-var server = app.listen(port, () => {
-    console.log("App is listening at port %s", port);
-});
+// Root to test connection
+app.get('/', (req, res) => {
+    res.send('Chickity Chickity')
+  })
+  
+app.listen(port, () => {
+    console.log(`app listening on port ${port}`)
+  })
 
