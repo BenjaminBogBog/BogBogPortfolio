@@ -29,15 +29,21 @@ app.post('/addUser', (req, res) => {
 
     const { username, score } = req.query;
 
+    console.log(req.query);
+
     if (!username || score === undefined) {
         return res.status(400).send('Username or score missing!');
     }
 
-    client.query('INSERT INTO user_data (username, score) VALUES (?, ?)', [username, score], (error, results) => {
+    let insertQuery = `INSERT INTO user_data (username, score) VALUES ('${username}', ${score})`
+    console.log(insertQuery)
+
+    client.query(insertQuery, (error, results) => {
+
         if (error) {
-            return res.status(500).send('An error occurred while inserting the user data!');
+            return res.status(500).send('An error occurred while inserting the user data! : %s' + error);
         }
-        res.send(`User added with ID: ${results.insertId}`);
+        res.send(results);
     });
 });
 
