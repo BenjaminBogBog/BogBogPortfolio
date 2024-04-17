@@ -1,15 +1,24 @@
 const express = require('express');
-const mysql = require('mysql');
+const pg  = require('pg');
+
+const { Client } = pg
+
+// Initialization.... Creating Connection to DB in externally in the cloud
+const connectionString = "postgres://chicken_runner_postgre_user:L9fzfF2PxCD6A1TOt1VrXc3ehxkO2Ucm@dpg-cofp1juv3ddc739n4ti0-a.singapore-postgres.render.com/chicken_runner_postgre?ssl=true";
+const client = new Client({
+	connectionString
+});
 
 const port = process.env.PORT || 8000;
 
-//Create connection
-const db = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'chicken_runner_database'
-});
+client
+	.connect()
+	.then(() => {
+		console.log('Connected to PostgreSQL database');
+	})
+	.catch((err) => {
+		console.error('Error connecting to PostgreSQL database', err);
+	});
 
 const app = express();
 
@@ -24,7 +33,7 @@ app.post('/addUser', (req, res) => {
         return res.status(400).send('Username or score missing!');
     }
 
-    db.query('INSERT INTO user_data (username, score) VALUES (?, ?)', [username, score], (error, results) => {
+    client.query('INSERT INTO user_data (username, score) VALUES (?, ?)', [username, score], (error, results) => {
         if (error) {
             return res.status(500).send('An error occurred while inserting the user data!');
         }
@@ -35,7 +44,7 @@ app.post('/addUser', (req, res) => {
 //Get user data
 app.get('/getUsersData', (req, res) => {
 
-    db.query('SELECT * FROM user_data', (error, results) => {
+  client.query('SELECT * FROM user_data', (error, results) => {
       if (error) {
         return res.status(500).send('An error occurred while retrieving the user data!');
     };
