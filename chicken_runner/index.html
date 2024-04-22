@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/02.loader.js";
+      var loaderUrl = buildUrl + "/03.loader.js";
       var config = {
-        dataUrl: buildUrl + "/02.data.gz",
-        frameworkUrl: buildUrl + "/02.framework.js.gz",
-        codeUrl: buildUrl + "/02.wasm.gz",
+        dataUrl: buildUrl + "/03.data.br",
+        frameworkUrl: buildUrl + "/03.framework.js.br",
+        codeUrl: buildUrl + "/03.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "BogBog",
         productName: "we-bouta-cook-lmao",
@@ -84,7 +84,7 @@
         document.getElementsByTagName('head')[0].appendChild(meta);
       }
 
-      canvas.style.background = "url('" + buildUrl + "/02.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/03.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
