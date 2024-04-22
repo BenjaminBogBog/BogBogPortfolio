@@ -1,5 +1,6 @@
 const express = require('express');
 const pg  = require('pg');
+const serveStatic = require('serve-static');
 
 const { Client } = pg
 
@@ -23,6 +24,17 @@ client
 const app = express();
 
 app.use(express.json());
+app.use(serveStatic('Game', {
+  setHeaders: (res, path) => {
+    if (path.endsWith('.wasm.br')) {
+      res.setHeader('Content-Type', 'application/wasm');
+    }
+ 
+    if (path.endsWith('.br')) {
+      res.setHeader('Content-Encoding', 'br');
+    }
+  }
+}));
 
 //Insert new users
 app.post('/addUser', (req, res) => {
@@ -59,9 +71,20 @@ app.get('/getUsersData', (req, res) => {
     });
   });
 
+  app.get('/getUsersData', (req, res) => {
+
+    client.query('SELECT * FROM user_data', (error, results) => {
+        if (error) {
+          return res.status(500).send('An error occurred while retrieving the user data!');
+      };
+      
+        res.json(results);
+      });
+    });
+
 // Root to test connection
 app.get('/', (req, res) => {
-    res.send('Chickity Chickity')
+  console.log("Chikity Chickity")
   })
   
 app.listen(port, () => {
