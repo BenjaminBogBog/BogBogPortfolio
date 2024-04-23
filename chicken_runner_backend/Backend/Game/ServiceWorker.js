@@ -1,9 +1,9 @@
 const cacheName = "BogBog-we-bouta-cook-lmao-1.0";
 const contentToCache = [
-    "Build/06.loader.js",
-    "Build/06.framework.js.br",
-    "Build/06.data.br",
-    "Build/06.wasm.br",
+    "Build/08.loader.js",
+    "Build/08.framework.js.br",
+    "Build/08.data.br",
+    "Build/08.wasm.br",
     "TemplateData/style.css"
 
 ];
