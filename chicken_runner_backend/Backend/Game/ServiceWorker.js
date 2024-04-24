@@ -1,9 +1,9 @@
 const cacheName = "BogBog-Chickapoo-0.1";
 const contentToCache = [
-    "Build/12.loader.js",
-    "Build/12.framework.js.br",
-    "Build/12.data.br",
-    "Build/12.wasm.br",
+    "Build/13.loader.js",
+    "Build/13.framework.js.unityweb",
+    "Build/13.data.unityweb",
+    "Build/13.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
