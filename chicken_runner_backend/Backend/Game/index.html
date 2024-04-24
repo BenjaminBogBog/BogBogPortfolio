@@ -57,15 +57,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/15.loader.js";
+      var loaderUrl = buildUrl + "/16.loader.js";
       var config = {
-        dataUrl: buildUrl + "/15.data.unityweb",
-        frameworkUrl: buildUrl + "/15.framework.js.unityweb",
-        codeUrl: buildUrl + "/15.wasm.unityweb",
+        dataUrl: buildUrl + "/16.data.unityweb",
+        frameworkUrl: buildUrl + "/16.framework.js.unityweb",
+        codeUrl: buildUrl + "/16.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "BogBog",
         productName: "Chickapoo",
-        productVersion: "0.1",
+        productVersion: "0.0.10",
         showBanner: unityShowBanner,
       };
 
@@ -84,7 +84,7 @@
         document.getElementsByTagName('head')[0].appendChild(meta);
       }
 
-      canvas.style.background = "url('" + buildUrl + "/15.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/16.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
