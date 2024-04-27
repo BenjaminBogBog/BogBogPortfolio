@@ -26,12 +26,12 @@ const app = express();
 app.use(express.json());
 app.use(serveStatic('Game', {
   setHeaders: (res, path) => {
-    if (path.endsWith('.wasm.br')) {
+    if (path.endsWith('.wasm.gz')) {
       res.setHeader('Content-Type', 'application/wasm');
     }
  
     if (path.endsWith('.br')) {
-      res.setHeader('Content-Encoding', 'br');
+      res.setHeader('Content-Encoding', 'gzip');
     }
   }
 }));
