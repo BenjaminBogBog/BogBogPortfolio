@@ -30,7 +30,7 @@ app.use(serveStatic('Game', {
       res.setHeader('Content-Type', 'application/wasm');
     }
  
-    if (path.endsWith('.br')) {
+    if (path.endsWith('.gz')) {
       res.setHeader('Content-Encoding', 'gzip');
     }
   }
