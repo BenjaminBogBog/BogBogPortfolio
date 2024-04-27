@@ -1,9 +1,9 @@
 const cacheName = "BogBog-Chickapoo-0.0.15";
 const contentToCache = [
-    "Build/test lightmap thing.loader.js",
-    "Build/test lightmap thing.framework.js.gz",
-    "Build/test lightmap thing.data.gz",
-    "Build/test lightmap thing.wasm.gz",
+    "Build/NoAudio.loader.js",
+    "Build/NoAudio.framework.js.gz",
+    "Build/NoAudio.data.gz",
+    "Build/NoAudio.wasm.gz",
     "TemplateData/style.css"
 
 ];
