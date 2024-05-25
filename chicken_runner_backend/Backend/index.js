@@ -71,11 +71,12 @@ app.get('/getUsersData', (req, res) => {
     });
   });
 
-  app.get('/getUsersData', (req, res) => {
+//Get top 100 user score
+  app.get('/getTop100', (req, res) => {
 
-    client.query('SELECT * FROM user_data', (error, results) => {
+    client.query('SELECT * FROM user_data ORDER BY score DESC LIMIT 100', (error, results) => {
         if (error) {
-          return res.status(500).send('An error occurred while retrieving the user data!');
+          return res.status(500).send('An error occurred while retrieving the top 100 user data!');
       };
       
         res.json(results);
@@ -90,4 +91,3 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`app listening on port ${port}`)
   })
-
